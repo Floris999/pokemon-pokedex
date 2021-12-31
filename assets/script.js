@@ -5,7 +5,7 @@ const fetchPokemon = () => {
         fetch(apiAndId)
         .then(response => response.json())
         .then((data) => {
-            console.log(data);
+            console.log(data); /*api data based on ID*/
             const pokemon = { /*creating object and fill with api data*/
                 name: data.name,
                 id: data.id,
