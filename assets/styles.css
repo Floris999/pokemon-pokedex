@@ -1,0 +1,79 @@
+/*import font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px 0px;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+    
+}
+
+li {
+    background-color: #62a2e0;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+li:hover {
+    background-color: #f2183b;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 60%;
+    padding: 20px 20px;
+    text-align: center; 
+}
+
+main {
+    margin-top: 150px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2183b;
+    color: white;
+    font-weight: 700;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+.poke-card-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    color: white;
+}
+
+.poke-card-img {
+    background-color: white;
+    border-radius: 50%;
+    height: 160px;
+    width: 180px;
+    padding: 10px 10px;
+}
+
+.poke-card-id{
+    color: white !important;
+}
+
+.poke-card-type {
+    color: white;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    justify-items: center;
+    row-gap: 30px;
+    
+}

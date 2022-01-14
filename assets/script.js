@@ -19,18 +19,18 @@ Promise.all(promises).then((results) => {
   }
 
 
-const displayPokemon = (pokemon) => {
-   let html = pokemon.map(split => {
-     let pokemonHtml = `
+let displayPokemon = (pokemon) => {
+   let pokemonSplit = pokemon.map(split => {
+     let pokemonList = `
      <li>
-      <img src="${split.img}" alt="pokemons"/>
-      <h2>${split.name}</h2><h4>ID: ${split.id}
-      <p>Type: ${split.type}
+      <img class="poke-card-img" src="${split.img}" alt="pokemons"/>
+      <h2 class="poke-card-name">${split.name}</h2><h4>ID: ${split.id}</h4>
+      <p class="poke-card-type">Type: ${split.type}
      </li>`;
-     return pokemonHtml;
+     return pokemonList;
    });
-  pokedex.innerHTML = html.join("");
-
+  
+   pokedex.innerHTML = pokemonSplit.join("");
 
 }
 
