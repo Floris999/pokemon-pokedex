@@ -1,3 +1,5 @@
+let pokedex = document.getElementById("pokedex");
+
 const fetchPokemon = () => {
   const promises = [];
   let url = "https://pokeapi.co/api/v2/pokemon/";
@@ -18,10 +20,15 @@ Promise.all(promises).then((results) => {
 
 
 const displayPokemon = (pokemon) => {
-  console.log(pokemon);
-  pokemon.map(split => {
-    document.getElementById("pokemonName").innerHTML = `<h1>${pokemon.name}</h1>`;
-  })
+   let html = pokemon.map(split => {
+     let pokemonHtml = `
+     <li>
+      <h2>${split.name}</h2><h4>${split.id}
+     </li>`;
+     return pokemonHtml;
+   });
+  pokedex.innerHTML = html.join("");
+
 
 }
 
