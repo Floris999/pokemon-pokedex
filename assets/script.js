@@ -23,7 +23,9 @@ const displayPokemon = (pokemon) => {
    let html = pokemon.map(split => {
      let pokemonHtml = `
      <li>
-      <h2>${split.name}</h2><h4>${split.id}
+      <img src="${split.img}" alt="pokemons"/>
+      <h2>${split.name}</h2><h4>ID: ${split.id}
+      <p>Type: ${split.type}
      </li>`;
      return pokemonHtml;
    });
