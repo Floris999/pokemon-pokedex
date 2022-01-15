@@ -1,79 +1,103 @@
 /*import font*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px 0px;
+  font-family: "Roboto", sans-serif;
+  margin: 0px 0px;
 }
 
 h1 {
-    font-weight: 300;
+  font-weight: 700;
+  color: white;
+}
+
+h4 {
+  color: white;
+  font-weight: 700;
 }
 
 ul {
-    list-style-type: none;
-    
+  list-style-type: none;
 }
 
 li {
-    background-color: #62a2e0;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 10px;
-    width: 60%;
-    padding: 20px 20px;
-    text-align: center;
+  background-color: #3d7dca;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 60%;
+  padding: 20px 20px;
+  text-align: center;
 }
 
 li:hover {
-    background-color: #f2183b;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 10px;
-    width: 60%;
-    padding: 20px 20px;
-    text-align: center; 
+  background-color: #f2183b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 60%;
+  padding: 20px 20px;
+  text-align: center;
 }
 
 main {
-    margin-top: 150px;
+  margin-top: 60px;
 }
 
 header {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #f2183b;
-    color: white;
-    font-weight: 700;
-    justify-content: center;
-    padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  background-color: #003a70;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
 }
 
 .poke-card-name {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 30px;
-    color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  color: white;
 }
 
 .poke-card-img {
-    background-color: white;
-    border-radius: 50%;
-    height: 160px;
-    width: 180px;
-    padding: 10px 10px;
+  background-color: white;
+  border-radius: 50%;
+  height: 160px;
+  width: 180px;
+  padding: 10px 10px;
 }
 
-.poke-card-id{
-    color: white !important;
-}
-
-.poke-card-type {
-    color: white;
+#poke-card-type {
+  color: white;
+  background-color: #ffcb05;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 12px;
+  text-align: center;
+  font-size: 16px;
 }
 
 #pokedex {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    justify-items: center;
-    row-gap: 30px;
-    
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  justify-content: space-evenly;
+  align-items: stretch;
+  row-gap: 30px;
+  background-color: rgba(177, 177, 177, 0.25);
+  padding: 40px 80px;
+  margin: 10px 40px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .poke-card-img {
+    height: 120px;
+    width: 140px;
+  }
 }

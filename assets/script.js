@@ -24,14 +24,16 @@ let displayPokemon = (pokemon) => {
      let pokemonList = `
      <li>
       <img class="poke-card-img" src="${split.img}" alt="pokemons"/>
-      <h2 class="poke-card-name">${split.name}</h2><h4>ID: ${split.id}</h4>
-      <p class="poke-card-type">Type: ${split.type}
+      <h2 class="poke-card-name">${split.name}</h2><h4>Nr. ${split.id}</h4>
+      <button id="poke-card-type">Type: ${split.type}</button>
      </li>`;
      return pokemonList;
+    
    });
-  
-   pokedex.innerHTML = pokemonSplit.join("");
+  pokedex.innerHTML = pokemonSplit.join("");
 
 }
+
+
 
 fetchPokemon();
